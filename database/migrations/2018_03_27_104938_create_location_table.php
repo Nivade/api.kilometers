@@ -16,7 +16,10 @@ class CreateLocationTable extends Migration
         Schema::create('location', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('zipcode')
+            $table->string('zipcode');
+            $table->string('address');
+            $table->string('country');
+            $table->string('city');
             $table->timestamps();
         });
     }
