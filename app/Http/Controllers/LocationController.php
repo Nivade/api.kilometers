@@ -34,7 +34,7 @@ class LocationController extends Controller
       $location->name = $request->input('name');
       $location->zipcode = $request->input('zipcode');
       $location->number = $request->input('address');
-      $location->city = $request->input('country');
+      $location->country = $request->input('country');
       $location->city = $request->input('city');
 
       if ($location->save()) {
