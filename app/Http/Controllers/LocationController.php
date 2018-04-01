@@ -61,10 +61,10 @@ class LocationController extends Controller
      */
     public function destroy($id)
     {
-      $location = Location::findOrFail($id);
+        $location = Location::findOrFail($id);
 
-      if ($location->delete()) {
-        return new LocationResource($location);
-      }
+        if ($location->delete()) {
+          return new LocationResource($location);
+        }
     }
 }
